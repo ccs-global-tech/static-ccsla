@@ -2,6 +2,10 @@ body {
     color: #363636;
 }
 
+.apus-footer {
+    background: red  !important;
+}
+
 /* CCS Styles */
 .header-main, .header-sticky {
 	background:#000 !important; 

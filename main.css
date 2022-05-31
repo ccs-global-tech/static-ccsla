@@ -158,7 +158,7 @@ body {
 }
 
 .ccs-testimonial-content::before {
-	content:'“';
+	content:'';
 	position: absolute;
 	font-size: 200px;
 	color: #3BA9D2;

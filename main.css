@@ -341,23 +341,6 @@ body {
 .bootcamp-dates p + ul {
 	margin-top: -10px;
 }
-@media only screen and (min-width: 41em) {
-	.bootcamp-dates {
-		box-shadow: 2px 2px 10px #333;
-	}
-}
-@media only screen and (max-width: 40em) {
-	thead th:not(:first-child) {
-		display: none;
-  }
-	td, th {
-    display: block;
-		width: 410px;
-  }
-	td[data-th]:before {
-    content: attr(data-th);
-  }
-}
 /*end styling Bootcamp start dates table*/
 
 /*popup maker edits*/

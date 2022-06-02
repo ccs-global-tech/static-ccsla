@@ -2,6 +2,10 @@ body {
     color: #363636;
 }
 
+.logo img {
+	max-width: 170px;
+}
+
 /* CCS Styles */
 .header-main, .header-sticky {
 	background:#000 !important; 
@@ -25,17 +29,19 @@ body {
 }
 
 .flex-grid {
-  display: flex;
+	display: flex;
 	align-items: center;
 	overflow-x: auto;
 }
+
 .col {
-  flex: 1;
+	flex: 1;
 }
+
 @media (max-width: 400px) {
-  .flex-grid {
-    display: block;
-  }
+	.flex-grid {
+		display: block;
+	}
 }
 
 .ccsla-bootcamp-secondary-nav {

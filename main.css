@@ -167,7 +167,7 @@ body {
 	z-index: -1;
 }
 
-.ccs-testimonial-author span:first-of-type { }
+.ccs-testimonial-author span:first-of-type { font-weight: bold; }
 .ccs-testimonial-author span:last-of-type::before { content: '/'; margin-left: 10px; margin-right: 10px; }
 .ccs-testimonial-author span:last-of-type { font-size: 14px; color: #555; }
 
@@ -201,6 +201,19 @@ body {
 
 /* END Hero Contact */
 
+/* Bootcamp pages */
+.ccs-bc-hero {
+
+}
+
+.ccs-hero-video {
+
+}
+
+.ccs-bc-startdates {
+	display: none;
+}
+
 /*********************** DANGER BELOW ************************/
 
 .flexible-all-content {
@@ -218,54 +231,6 @@ body {
 	}
 }
 /* end sticky menu */
-
-/* Winston's toggle tabs
-.vc_tta-tab a:hover {
-	color: #3ba9d2 !important;
-	background-color: unset !important;
-}
-
-.vc_tta-tab.vc_active {
-	border-bottom: 3px solid #3ba9d2;
-	background-color: white !important;
-}
-
-.vc_tta-tab.vc_active a {
-	background-color: white !important;
-}
-
-.vc_tta-tab a {
-	border: 1px hidden transparent !important;
-}
-
-.vc_tta-tab a span {
-	font-size: .9em;
-}
-
-.vc_tta-panel.vc_active {
-	border-left: 15px solid #3ba9d2;
-}
-
-.vc_tta-panel-body {
-	color: #333333;
-	background-color: white !important;
-}
-
-.vc_tta-panel-body p {
-	margin-top: 0;
-}
-
-.vc_tta-panels-container {
-	margin-top: 20px;
-}
-
-.vc_tta-tabs-list {
-	display: flex !important;
-}
-
-.vc_general.vc_tta.vc_tta-tabs.vc_tta-color-white.vc_tta-style-modern.vc_tta-shape-square.vc_tta-spacing-1.container.vc_tta-tabs-position-left.vc_tta-controls-align-left {
-	display: inline-block !important;
-} */
 
 .widget-features-box {
 	border: 1px solid #dddddd;

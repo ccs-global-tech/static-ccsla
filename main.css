@@ -11,6 +11,40 @@ body {
 	background:#000 !important; 
 }
 
+.ccs-btn {
+	cursor:pointer;
+	position:relative;
+	outline:none;
+	background:#F3963C;
+	color:#fff;
+	font-size: 16px;
+	z-index:5;
+	border-radius:5px;
+	display: inline-block;
+	padding: 10px 20px;
+	overflow: hidden;
+	transition: background-color 0.2s;
+	box-shadow: 0 0 10px -3px rgba(0,0,0,0.3);
+}
+
+.ccs-btn-alt {background-color: #3BA9D2;}
+.ccs-btn-white {background-color: #fff;color: #000;}
+.ccs-btn-white:hover {color: black !important;}
+.ccs-btn-white::before {background-color: rgba(0,0,0,0.5) !important;}
+.ccs-btn:hover {color: #fff;}
+.ccs-btn:hover::before {transform: rotateZ(15deg) translateX(-50px) translateY(-10px);opacity: 0;}
+
+.ccs-btn::before {
+	content: '';
+	background: rgba(255,255,255,0.5);
+	z-index: 15px;
+	position: absolute;
+	width: 200%;
+	height: 100px;
+	transition: transform 0.4s ease-in-out, opacity 0.4s;
+	transform: rotateZ(15deg) translateX(-120%) translateY(-10px);
+}
+
 .ccsla-btn {
 	background:#F3963C;
 	color:white;
@@ -207,20 +241,61 @@ body {
 
 /* END Hero Contact */
 
-/* Bootcamp pages */
-.ccs-bc-hero {
+/*********************** DANGER BELOW ************************/
 
+/* Theme style overrides */
+/* Widget: Toggle */
+.vc_toggle {
+	margin-bottom: 15px;
 }
 
-.ccs-hero-video {
-
+.vc_toggle .vc_toggle_title {
+	font-size: 18px;
+	padding: 10px;
+	margin: 0;
 }
 
-.ccs-bc-startdates {
+.vc_toggle .vc_toggle_icon {
+	margin-left: 10px;
+}
+
+.vc_toggle .vc_custom_heading {
+	padding: 0;
+	margin: 0;
+	margin-left: 8px;
+	font-size: 18px;
+}
+
+.vc_toggle .vc_toggle_content {
+	background: #f5f5f5;
+	margin-top: -10px;
+	border-radius: 5px;
+	padding: 35px 10px 20px 10px;
+}
+
+.vc_toggle .vc_toggle_content p:first-of-type {
+	margin-top: 0;
+}
+
+/* Widget: Action */
+.widget-action {
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.widget-action .title {
+	margin-bottom: 10px !important;
+}
+
+.widget-action .description {
 	
 }
 
-/*********************** DANGER BELOW ************************/
+.widget-action .btn {
+	border-radius: 5px !important;
+}
 
 .flexible-all-content {
 	display: none;

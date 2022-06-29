@@ -15,7 +15,7 @@ h3 { font-size: clamp(20px,4vw,40px); font-weight: var(--weight-black); }
 h4 { font-size: clamp(18px,3vw,32px); font-weight: var(--weight-black); }
 h5 { font-size: clamp(18px,3.5vw, 24px); font-weight: var(--weight-black); font-weight: bold; }
 .title i { margin-right: 20px; color: var(--clr-accent); }
-p { font-size: clamp(16px,2vw,20px); font-family: var(); }
+p { font-size: clamp(16px, 2vw, 16px); font-family: var(); }
 .ccs-col-40 { width: 40%; }
 button, input { font-family: var(--font-primary); }
 

@@ -42,9 +42,9 @@ h3 { font-size: clamp(20px,4vw,40px); font-weight: var(--weight-black); }
 h4 { font-size: clamp(18px,3vw,32px); font-weight: var(--weight-black); }
 h5 { font-size: clamp(18px,3.5vw, 24px); font-weight: var(--weight-black); font-weight: bold; }
 .title i { margin-right: 20px; color: var(--clr-accent); }
-p { font-size: clamp(16px,2vw,20px); font-family: var(); }
+p { font-size: clamp(16px,2vw,20px); font-family: var(--font-primary); }
 .ccs-col-40 { width: 40%; }
-button, input { font-family: var(--font-primary); }
+button, input { font-family: var(--font-primary); font-size: 16px; }
 
 /* Layouts */
 .ccs-container { max-width: 1200px; margin: 0 auto; }
@@ -69,9 +69,9 @@ button, input { font-family: var(--font-primary); }
 .ccs-cta-text { margin-top: 10px; color: var(--clr-text-sub); }
 .ccs-cta-actions { display: flex; margin-top: 35px; gap: 10px; }
 .ccs-cta-btn { font-family: 'Lato', sans-serif; background-color: var(--clr-primary); color: white; border-radius: 50px; padding: 15px 25px; text-decoration: none; 
-    display: inline-block; transition: background-color 0.2s, box-shadow 0.2s; box-shadow: 0 0 0 5px transparent; }
-.ccs-cta-btn:hover { background-color: var(--clr-primary-hover); }
-.ccs-cta-btn:focus { box-shadow: 0 0 0 5px var(--clr-primary-overlay); }
+    display: inline-block; transition: background-color 0.2s, box-shadow 0.2s; box-shadow: 0 0 0 5px transparent; font-size: 16px; }
+.ccs-cta-btn:hover { background-color: var(--clr-primary-hover); color: white; }
+.ccs-cta-btn:focus { box-shadow: 0 0 0 5px var(--clr-primary-overlay); color: white; }
 .ccs-cta-input { font-family: 'Lato', sans-serif; border-radius: 50px; border: 2px solid var(--clr-bd-light); padding: 15px; min-width: 270px; outline: none; }
 .ccs-cta-input:focus { border-color: var(--clr-bd-light-focus); }
 
@@ -135,10 +135,14 @@ button, input { font-family: var(--font-primary); }
 	.flex-grid { display: block; }
 }
 
+@media (max-width: 1200px) {
+	#site-footer .ccs-row { flex-direction: column; }
+}
+
 footer { background: #111; } 
 #site-footer { max-width: 1200px; margin: 0 auto; padding: 40px 20px 20px 20px; }
 #site-footer .logo { max-width: 180px; margin-bottom: 20px; }
-#site-footer .ccs-row { display: flex; flex-wrap: nowrap; justify-content: space-around;}
+#site-footer .ccs-row { display: flex; justify-content: space-around;}
 #site-footer .ccs-col { width: auto; min-width: 300px; }
 #site-footer nav { display: flex; flex-direction: column; }
 #site-footer .title { margin-top: 0; margin-bottom: 15px; color: var(--clr-primary); font-weight: 900; }
@@ -192,6 +196,7 @@ left:0px;font-size:92px;margin-right:20px;margin-left:20px;color: #fff !importan
 .ccsla-advantage .elementor-icon-box-title { margin-top: 0; font-size: 24px; }
 .ccsla-advantage .elementor-icon-box-icon { margin-right: 25px; }
 .ccsla-advantage .elementor-icon-box-icon svg { width:100px !important; }
+.ccsla-advantage .elementor-icon-box-description { font-size: 16px; margin-bottom: 5px !important; }
 /* END Custom heading with icon */
 
 /* Carousel */

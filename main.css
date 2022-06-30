@@ -186,7 +186,7 @@ left:0px;font-size:92px;margin-right:20px;margin-left:20px;color: #fff !importan
 /* END Elementor CTA */
 
 /* Custom heading with icon */
-.ccs-heading-icon .elementor-heading-title { display:flex;margin-bottom: -50px;margin-top:10px; }
+.ccs-heading-icon .elementor-heading-title { display:flex;margin-bottom: -50px;margin-top:10px; font-size: 24px; }
 .ccs-w100 .elementor-container { width:100%;}
 
 .ccsla-advantage .elementor-icon-box-title { margin-top: 0; font-size: 24px; }

@@ -1,9 +1,36 @@
+@import "https://cdn.statically.io/gh/ccs-global-tech/static-ccsla/main/main.css";
+@import "https://cdn.statically.io/gh/ccs-global-tech/static-ccsla/main/bootcamp-pages.css";
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Merriweather:wght@700;900&family=Mulish:wght@700;800;900&family=Open+Sans:wght@400;700;800&display=swap');
+@import 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css';
+
 body {
     color: #363636;
 	font-family: 'Open Sans', sans-serif;
     padding: 0;
     margin: 0;
     text-rendering: optimizeLegibility;
+}
+
+:root {
+    --clr-primary: #ff8104;
+    --clr-primary-hover: #e97400;
+    --clr-primary-overlay: rgba(233, 117, 0, 0.3);
+
+    --clr-accent: #3BA9D2;
+    --clr-accent-dark: #004872;
+
+    --clr-text-dark: #23272a;
+    --off-white: #f6f6f6;
+    --clr-bd-light: #DDD;
+    --clr-bd-light-focus: #AAA;
+    --clr-text-sub: #AAA;
+    --clr-bd-light-overlay: rgba(0,0,0,0.050);
+
+    --font-titles: 'Mulish', sans-serif;
+    --font-secondary: 'Merriweather', serif;
+    --font-primary: 'Open Sans', sans-serif;
+
+    --weight-black: 900;
 }
 
 /* Core */
@@ -108,6 +135,22 @@ button, input { font-family: var(--font-primary); }
 	.flex-grid { display: block; }
 }
 
+footer { background: #111; } 
+#site-footer { max-width: 1200px; margin: 0 auto; padding: 40px 20px 20px 20px; }
+#site-footer .logo { max-width: 180px; margin-bottom: 20px; }
+#site-footer .ccs-row { display: flex; flex-wrap: nowrap; justify-content: space-around;}
+#site-footer .ccs-col { width: auto; min-width: 300px; }
+#site-footer nav { display: flex; flex-direction: column; }
+#site-footer .title { margin-top: 0; margin-bottom: 15px; color: var(--clr-primary); font-weight: 900; }
+#site-footer nav a { border-left: 5px solid var(--clr-accent); font-size: 14px; display: block; margin-bottom: 10px; padding: 10px; background: rgba(255,255,255,0.1); color: white;text-decoration: none; border-radius: 5px; transition: color 0.2s, background-color 0.2s; }
+#site-footer nav a:hover { background-color: rgba(255,255,255,0.2); }
+#site-footer nav.flex-row { flex-direction: row; }
+#site-footer .contact-item { display: flex; flex-direction: row; align-items: center; margin-bottom: 10px; color: #FFF; }
+#site-footer .contact-item > span:first-of-type { font-size: 22px; color: var(--clr-accent); display: block; min-width: 35px; }
+#site-footer .social-tray a { border: none; font-size: 24px; padding: 0; margin-right: 15px; background-color: transparent; }
+#site-footer .social-tray a:hover { color: var(--clr-accent); background-color: transparent;}
+#footer-copyright { text-align: center; color: #888; font-size: 14px; }
+
 /* Relatively new fixes */
 .header-main, .header-sticky {
 	background:#000 !important; 
@@ -194,16 +237,21 @@ left:0px;font-size:92px;margin-right:20px;margin-left:20px;color: #fff !importan
 /* END Hero Contact */
 
 /* Bootcamp pages */
-.ccs-bc-hero {
+.ccs-bc-hero-video {margin-top: -10px;margin-bottom: 20px;margin-left: auto;margin-right: auto;display: block;}
+.ccs-bc-hero-video iframe {width: 100%;max-width: 600px;min-width: 270px;height: 320px;margin: 0 auto;}
+.ccs-bc-startdates table {width: 100%;border-radius: 5px;overflow: hidden;box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);}
+.bootcamp-dates {background: white;border-radius: 10px;overflow: hidden;box-shadow: 0 0 20px -10px rgba(0,0,0,0.5);}
+.bootcamp-dates table,.bootcamp-dates td,.bootcamp-dates th {border: none;}
+.bootcamp-dates-title {padding: 15px;background: linear-gradient(140deg, #3BA9D2, #004C95);color: white;}
+.bootcamp-dates-header {font-size: 20px;margin-top: 0;}
+.bootcamp-dates .ccs-col {padding: 20px;flex-grow: 1;flex-basis: 0;}
+.bootcamp-dates .ccs-col:not(:last-of-type) {border-right: 1px solid #EEE;}
+.bootcamp-dates-content {display: flex;flex-wrap: wrap;}
+.bootcamp-dates-item {display: block;font-size: 16px;}
 
-}
-
-.ccs-hero-video {
-
-}
-
-.ccs-bc-startdates {
-	
+@media screen and (max-width: 1300px) {
+	.bootcamp-dates-content {flex-direction: column;}
+	.bootcamp-dates .ccs-col { border: none; border-bottom: 1px solid #eee;width: 100%; }
 }
 
 /* Theme style overrides */

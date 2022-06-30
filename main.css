@@ -15,7 +15,7 @@ h3 { font-size: clamp(20px,4vw,40px); font-weight: var(--weight-black); }
 h4 { font-size: clamp(18px,3vw,32px); font-weight: var(--weight-black); }
 h5 { font-size: clamp(18px,3.5vw, 24px); font-weight: var(--weight-black); font-weight: bold; }
 .title i { margin-right: 20px; color: var(--clr-accent); }
-p { font-size: clamp(16px, 2vw, 16px); font-family: var(); }
+p { font-size: clamp(16px,2vw,20px); font-family: var(); }
 .ccs-col-40 { width: 40%; }
 button, input { font-family: var(--font-primary); }
 
@@ -146,7 +146,7 @@ left:0px;font-size:92px;margin-right:20px;margin-left:20px;color: #fff !importan
 .ccs-heading-icon .elementor-heading-title { display:flex;margin-bottom: -50px;margin-top:10px; }
 .ccs-w100 .elementor-container { width:100%;}
 
-.ccsla-advantage .elementor-icon-box-title { margin-top: 0; }
+.ccsla-advantage .elementor-icon-box-title { margin-top: 0; font-size: 24px; }
 .ccsla-advantage .elementor-icon-box-icon { margin-right: 25px; }
 .ccsla-advantage .elementor-icon-box-icon svg { width:100px !important; }
 /* END Custom heading with icon */
@@ -156,13 +156,13 @@ left:0px;font-size:92px;margin-right:20px;margin-left:20px;color: #fff !importan
 #hero_carousel .owl-next { margin-left:-30px; }
 #hero_carousel .ccs-row { align-items: center; gap: 55px !important; }
 #hero_carousel .owl-prev { margin-right:-30px; }
-#hero_carousel .ccs-image-wrapper { min-width: 300px; max-width: 50%; }
+#hero_carousel .ccs-image-wrapper { min-width: 300px; max-width: 45%; }
 #hero_carousel .ccs-image-wrapper img { max-width: 100%; height: auto; border-radius: 5px;}
 #hero_carousel .ccs-carousel-content { max-width: 50%; min-width: 300px; }
 .carousel-item-wrapper 		{ max-width: 1100px; margin: 0 auto; }
-.carousel-item-wrapper h4 { margin-bottom: 0; margin-top:0; }
-.carousel-item-wrapper h2 { margin-top: -10px; font-size: 44px; }
-.carousel-item-wrapper h5 { margin-bottom: 10px; font-size: 18px; }
+.carousel-item-wrapper .subtitle { margin-bottom: 0; margin-top:0; }
+.carousel-item-wrapper .title { margin-top: -10px; font-size: 44px; }
+.carousel-item-wrapper .subtitle { margin-bottom: 10px; font-size: 18px; }
 .carousel-item-wrapper p 	{ margin-bottom: 35px; font-size: 16px; max-width: 800px; }
 .carousel-item-wrapper .ccsla-btn:hover {color:white; }
 #testimonials .sa_hover_container { border-radius:10px; }
